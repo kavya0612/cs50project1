@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Books Review
+{% endblock %}
+
+{% block body %}
+    <h1>Register here</h1>
+
+        <form action="{{ url_for('save') }}" method="post">
+            <div>
+                <input name="name" placeholder="Enter user name">
+            </div>
+            <div>
+                <input type=password name="password" placeholder="Enter password">
+            </div>
+            <button>Register</button>
+        </form>
+{% endblock %}
+
+

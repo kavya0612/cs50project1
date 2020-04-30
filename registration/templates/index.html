@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Books Review
+{% endblock %}
+
+{% block body %}
+    <h1>Welcome! Books Review</h1>
+    <h5>Not an user?</h5>
+    <h4>Click here<button><a href="http://127.0.0.1:5000/register">Register {{ user[1] }}</a></button> to register first</h4>
+    <form action="{{ url_for('index') }}" method="post">
+{% endblock %}
+    
